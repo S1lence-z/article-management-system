@@ -1,0 +1,194 @@
+/* OVERALL ELEMENTS */
+body {
+	width: 1024px;
+	padding-top: 20px;
+	margin: 0 auto;
+}
+
+h1 {
+	font-size: x-large;
+}
+
+* {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: medium;
+}
+
+.disabled-button {
+	background-color: black !important;
+}
+
+.center {
+	max-width: 700px;
+	justify-content: center;
+	text-align: center;
+	align-items: center;
+	margin: 0 auto 25px auto;
+	padding: 20px;
+}
+
+.hidden {
+	display: none !important;
+}
+
+/* BUTTON STYLES */
+.button {
+	border: 1px solid black;
+	padding: 5px 5px;
+	margin: 5px;
+	justify-content: center;
+	text-align: center;
+	text-decoration: none;
+	transition: background-color 0.3s;
+}
+
+.button-green {
+	background-color: green;
+	color: white;
+}
+
+.button-green:hover {
+	background-color: rgb(5, 189, 5);
+}
+
+.button-red {
+	background-color: red;
+	color: white;
+}
+
+.button-red:hover {
+	background-color: rgb(194, 192, 192);
+}
+
+.button-blue {
+	background-color: rgb(0, 115, 255);
+	color: white;
+}
+
+.button-blue:hover {
+	background-color: rgb(194, 192, 192);
+}
+
+/* ARTICLE PAGE STYLES */
+#article-list > li {
+	display: flex;
+	align-items: center;
+	padding: 3px 6px;
+	list-style-type: none;
+	width: calc(100% - 32px);
+	margin-top: -1px;
+	justify-content: space-between;
+}
+
+.article-options {
+	display: flex;
+	padding-right: 0px;
+}
+
+.article-buttons-list {
+	display: flex;
+	text-align: center;
+	justify-content: space-between;
+	margin-left: 35px;
+	margin-right: -5px;
+}
+
+#pagination {
+	display: flex;
+	text-align: center;
+	justify-content: space-between;
+}
+
+#pageCount {
+	border: 1px solid black;
+	padding: 8px 8px;
+	margin: 5px;
+	text-align: center;
+	text-decoration: none;
+	transition: background-color 0.3s;
+}
+
+#create-article-window {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(128, 128, 128, 0.322);
+	backdrop-filter: blur(2px);
+}
+
+.create-article-card {
+	background-color: white;
+	border: 1px solid black;
+	width: 600px;
+}
+
+.create-article-button-list {
+	display: flex;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	justify-content: space-around;
+}
+
+#cancel-button {
+	background-color: red;
+}
+
+#cancel-button:hover {
+	background-color: rgb(168, 0, 0);
+}
+
+#new-name-input {
+	height: 50px;
+}
+
+/* SHOW PAGE STYLES */
+.article-card {
+	max-width: 500px;
+	margin: auto;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid black;
+	padding: 50px;
+}
+
+.article-text p {
+	max-width: 1100px;
+	word-wrap: break-word;
+	overflow-wrap: break-word;
+	text-align: justify;
+}
+
+.show-button-list {
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	margin-top: 10px;
+}
+
+/* EDIT PAGE STYLES */
+#edit-article-name > input {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	gap: 10px;
+}
+
+#edit-article-content > textarea {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	width: 100%;
+	height: 200px;
+	resize: none;
+}
+
+/* TIME STYLES */
+p {
+	font-size: small;
+}

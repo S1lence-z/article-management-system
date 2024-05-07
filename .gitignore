@@ -1,0 +1,6 @@
+node_modules
+.eslintrc.json
+eslint.config.mjs
+package-lock.json
+package.json
+db_config.php
